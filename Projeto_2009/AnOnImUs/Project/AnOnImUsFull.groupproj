@@ -1,0 +1,1176 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D573131A-777C-4AD7-AA61-94D75B7D70C0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Basico\dpk\basico.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Principal\AnOnImUs.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_contas_pagar\dpk\rel_contas_pagar.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Investimentos\dpk\investimentos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Cheques\dpk\cheques.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Servicos\frm_agenda\dpk\agenda.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_agenda\dpk\rel_agenda.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_medicao_planocontas\dpk\graf_medicao_planocontas.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_irpf\dpk\rel_irpf.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Patrimonio\frm_patrimonio\dpk\patrimonio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_tipo_agendamento\dpk\tipoagendamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_unidademedida\dpk\unidademedida.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_teleatendimentoOS\dpk\teleatendimentoOS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_status_atendimento\dpk\status_atendimento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Vendas\frm_venda_orcamento\dpk\vendas_orcamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Vendas\frm_faturamento\dpk\faturamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Vendas\frm_altera_prc_venda\dpk\altera_preco_venda.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Empresa\dpk\empresas.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Menus\dpk\menus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_Usuarios\dpk\usuarios.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Clientes\dpk\clientes.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Fornecedores\dpk\fornecedores.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Grupo_Cliente\dpk\grupo_cliente.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Pracas\dpk\pracas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Estados\dpk\estados.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Regioes\dpk\regioes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Cadastros\frm_Rotas\dpk\rotas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Aliquotas\dpk\aliquotas_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Entrada_Avulsa_Prod\dpk\entrada_avulsa_prod.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Entrada_NF\dpk\entrada_notafiscal.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Grupos\dpk\grupos_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Marcas\dpk\marcas_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Modelos\dpk\modelos_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_filtro_produtos\dpk\filtros_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Produtos\dpk\produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Saida_Avulsa_Prod\dpk\saida_avulsa_prod.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Estoque\frm_Saida_Prod_Avaria\dpk\saida_prod_avaria.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Contas_Receber\dpk\contas_receber.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Contas_Pagar\dpk\contas_pagar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Baixa_Contas_Pagar_Auto\dpk\baixa_contas_pagar_auto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Baixa_Contas_Pagar_Parcial\dpk\baixa_contas_pagar_parcial.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Baixa_Contas_Receber_Auto\dpk\baixa_contas_receber_auto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Baixa_Contas_Receber_Parcial\dpk\baixa_contas_receber_parcial.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Lanc_Auto_Contas_Pagar\dpk\lanc_auto_contas_pagar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Lanc_Auto_Contas_Receber\dpk\lanc_auto_contas_receber.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Bancos\dpk\bancos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Contas_Bancarias\dpk\contas_bancarias.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Movimentaca_Bancaria\dpk\movimentacao_bancaria.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Plano_Contas\dpk\plano_contas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Plano_Contas_Planejamento\dpk\plano_contas_planejamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Projecoes_Plano_Contas\dpk\projecao_plano_conta.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Tipos_Movimentacoes_Bancarias\dpk\tipos_movimentacoes_bancarias.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Obras\frm_controle_obras\dpk\controle_obras.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_contas_receber_pagar\dpk\graf_contas_receber_pagar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_evolutivo_anual\dpk\graf_evolutivo_anual.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_forma_pagamento\dpk\graf_forma_pagamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_resumo_financeiro_anual\dpk\graf_resumo_financeiro_anual.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_planejamento_anual\dpk\graf_planejamento_anual.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_resumo_diario\dpk\graf_resumo_diario.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\graf_evolutivo_plano_contas\dpk\graf_evolutivo_plano_contas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_abc_financas\dpk\rel_abc_financas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_anual_evolutivo\dpk\rel_anual_evolutivo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_clientes\dpk\rel_clientes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_contabil\dpk\rel_contabil.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_contas_bancarias\dpk\rel_contas_bancarias.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_contas_receber\dpk\rel_contas_receber.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_contas_receber_X_pagar\dpk\rel_contas_receber_x_pagar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_curva_abc_estoque\dpk\rel_curva_abc_estoque.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_entrada_avulsa_produtos\dpk\rel_entrada_avulsa_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_entrada_nota_fiscal\dpk\rel_entrada_nota_fiscal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_fornecedores\dpk\rel_fornecedores.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_grupos_produtos\dpk\rel_grupos_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj">
+            <Dependencies>..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj;..\Administrativo\frm_Basico\dpk\basico.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_marcas_produtos\dpk\rel_marcas_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_modelos_produtos\dpk\rel_modelos_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_plano_contas\dpk\rel_plano_contas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_plano_contas_planejamento\dpk\rel_plano_contas_planejamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_pracas\dpk\rel_pracas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_saida_avaria_produtos\dpk\rel_saida_avaria_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_saida_avulsa_produtos\dpk\rel_saida_avulsa_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Servicos\frm_status_os\dpk\statusos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Administrativo\frm_geradorkey\dpk\geradorkey.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Financeiro\frm_Cartao_Credito\dpk\cartao_credito.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Relatorios\rel_patrimonio\dpk\rel_patrimonio.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Pro_Funcoes">
+        <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj"/>
+    </Target>
+    <Target Name="Pro_Funcoes:Clean">
+        <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Pro_Funcoes:Make">
+        <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="basico" DependsOnTargets="Pro_Funcoes">
+        <MSBuild Projects="..\Administrativo\frm_Basico\dpk\basico.dproj"/>
+    </Target>
+    <Target Name="basico:Clean" DependsOnTargets="Pro_Funcoes:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Basico\dpk\basico.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="basico:Make" DependsOnTargets="Pro_Funcoes:Make">
+        <MSBuild Projects="..\Administrativo\frm_Basico\dpk\basico.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AnOnImUs" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj"/>
+    </Target>
+    <Target Name="AnOnImUs:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AnOnImUs:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ordem_servico">
+        <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj"/>
+    </Target>
+    <Target Name="ordem_servico:Clean">
+        <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ordem_servico:Make">
+        <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="configuracao" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj"/>
+    </Target>
+    <Target Name="configuracao:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="configuracao:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_ordem_servicos" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj"/>
+    </Target>
+    <Target Name="rel_ordem_servicos:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_ordem_servicos:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_contas_pagar" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Relatorios\rel_contas_pagar\dpk\rel_contas_pagar.dproj"/>
+    </Target>
+    <Target Name="rel_contas_pagar:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Relatorios\rel_contas_pagar\dpk\rel_contas_pagar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_contas_pagar:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Relatorios\rel_contas_pagar\dpk\rel_contas_pagar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="investimentos">
+        <MSBuild Projects="..\Financeiro\frm_Investimentos\dpk\investimentos.dproj"/>
+    </Target>
+    <Target Name="investimentos:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Investimentos\dpk\investimentos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="investimentos:Make">
+        <MSBuild Projects="..\Financeiro\frm_Investimentos\dpk\investimentos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="cheques" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Financeiro\frm_Cheques\dpk\cheques.dproj"/>
+    </Target>
+    <Target Name="cheques:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Cheques\dpk\cheques.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cheques:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Financeiro\frm_Cheques\dpk\cheques.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="agenda" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Servicos\frm_agenda\dpk\agenda.dproj"/>
+    </Target>
+    <Target Name="agenda:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Servicos\frm_agenda\dpk\agenda.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="agenda:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Servicos\frm_agenda\dpk\agenda.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_agenda">
+        <MSBuild Projects="..\Relatorios\rel_agenda\dpk\rel_agenda.dproj"/>
+    </Target>
+    <Target Name="rel_agenda:Clean">
+        <MSBuild Projects="..\Relatorios\rel_agenda\dpk\rel_agenda.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_agenda:Make">
+        <MSBuild Projects="..\Relatorios\rel_agenda\dpk\rel_agenda.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_medicao_planocontas" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Relatorios\graf_medicao_planocontas\dpk\graf_medicao_planocontas.dproj"/>
+    </Target>
+    <Target Name="graf_medicao_planocontas:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Relatorios\graf_medicao_planocontas\dpk\graf_medicao_planocontas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_medicao_planocontas:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Relatorios\graf_medicao_planocontas\dpk\graf_medicao_planocontas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_irpf">
+        <MSBuild Projects="..\Relatorios\rel_irpf\dpk\rel_irpf.dproj"/>
+    </Target>
+    <Target Name="rel_irpf:Clean">
+        <MSBuild Projects="..\Relatorios\rel_irpf\dpk\rel_irpf.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_irpf:Make">
+        <MSBuild Projects="..\Relatorios\rel_irpf\dpk\rel_irpf.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="patrimonio">
+        <MSBuild Projects="..\Patrimonio\frm_patrimonio\dpk\patrimonio.dproj"/>
+    </Target>
+    <Target Name="patrimonio:Clean">
+        <MSBuild Projects="..\Patrimonio\frm_patrimonio\dpk\patrimonio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="patrimonio:Make">
+        <MSBuild Projects="..\Patrimonio\frm_patrimonio\dpk\patrimonio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tipoagendamento">
+        <MSBuild Projects="..\Servicos\frm_tipo_agendamento\dpk\tipoagendamento.dproj"/>
+    </Target>
+    <Target Name="tipoagendamento:Clean">
+        <MSBuild Projects="..\Servicos\frm_tipo_agendamento\dpk\tipoagendamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tipoagendamento:Make">
+        <MSBuild Projects="..\Servicos\frm_tipo_agendamento\dpk\tipoagendamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="unidademedida">
+        <MSBuild Projects="..\Estoque\frm_unidademedida\dpk\unidademedida.dproj"/>
+    </Target>
+    <Target Name="unidademedida:Clean">
+        <MSBuild Projects="..\Estoque\frm_unidademedida\dpk\unidademedida.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="unidademedida:Make">
+        <MSBuild Projects="..\Estoque\frm_unidademedida\dpk\unidademedida.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="teleatendimentoOS">
+        <MSBuild Projects="..\Servicos\frm_teleatendimentoOS\dpk\teleatendimentoOS.dproj"/>
+    </Target>
+    <Target Name="teleatendimentoOS:Clean">
+        <MSBuild Projects="..\Servicos\frm_teleatendimentoOS\dpk\teleatendimentoOS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="teleatendimentoOS:Make">
+        <MSBuild Projects="..\Servicos\frm_teleatendimentoOS\dpk\teleatendimentoOS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="status_atendimento">
+        <MSBuild Projects="..\Servicos\frm_status_atendimento\dpk\status_atendimento.dproj"/>
+    </Target>
+    <Target Name="status_atendimento:Clean">
+        <MSBuild Projects="..\Servicos\frm_status_atendimento\dpk\status_atendimento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="status_atendimento:Make">
+        <MSBuild Projects="..\Servicos\frm_status_atendimento\dpk\status_atendimento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vendas_orcamento">
+        <MSBuild Projects="..\Vendas\frm_venda_orcamento\dpk\vendas_orcamento.dproj"/>
+    </Target>
+    <Target Name="vendas_orcamento:Clean">
+        <MSBuild Projects="..\Vendas\frm_venda_orcamento\dpk\vendas_orcamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vendas_orcamento:Make">
+        <MSBuild Projects="..\Vendas\frm_venda_orcamento\dpk\vendas_orcamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="faturamento">
+        <MSBuild Projects="..\Vendas\frm_faturamento\dpk\faturamento.dproj"/>
+    </Target>
+    <Target Name="faturamento:Clean">
+        <MSBuild Projects="..\Vendas\frm_faturamento\dpk\faturamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="faturamento:Make">
+        <MSBuild Projects="..\Vendas\frm_faturamento\dpk\faturamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="altera_preco_venda">
+        <MSBuild Projects="..\Vendas\frm_altera_prc_venda\dpk\altera_preco_venda.dproj"/>
+    </Target>
+    <Target Name="altera_preco_venda:Clean">
+        <MSBuild Projects="..\Vendas\frm_altera_prc_venda\dpk\altera_preco_venda.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="altera_preco_venda:Make">
+        <MSBuild Projects="..\Vendas\frm_altera_prc_venda\dpk\altera_preco_venda.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="empresas" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Administrativo\frm_Empresa\dpk\empresas.dproj"/>
+    </Target>
+    <Target Name="empresas:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Empresa\dpk\empresas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="empresas:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Administrativo\frm_Empresa\dpk\empresas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="menus">
+        <MSBuild Projects="..\Administrativo\frm_Menus\dpk\menus.dproj"/>
+    </Target>
+    <Target Name="menus:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Menus\dpk\menus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="menus:Make">
+        <MSBuild Projects="..\Administrativo\frm_Menus\dpk\menus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="usuarios">
+        <MSBuild Projects="..\Administrativo\frm_Usuarios\dpk\usuarios.dproj"/>
+    </Target>
+    <Target Name="usuarios:Clean">
+        <MSBuild Projects="..\Administrativo\frm_Usuarios\dpk\usuarios.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="usuarios:Make">
+        <MSBuild Projects="..\Administrativo\frm_Usuarios\dpk\usuarios.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="clientes" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Cadastros\frm_Clientes\dpk\clientes.dproj"/>
+    </Target>
+    <Target Name="clientes:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Clientes\dpk\clientes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="clientes:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Cadastros\frm_Clientes\dpk\clientes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="fornecedores">
+        <MSBuild Projects="..\Cadastros\frm_Fornecedores\dpk\fornecedores.dproj"/>
+    </Target>
+    <Target Name="fornecedores:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Fornecedores\dpk\fornecedores.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="fornecedores:Make">
+        <MSBuild Projects="..\Cadastros\frm_Fornecedores\dpk\fornecedores.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="grupo_cliente">
+        <MSBuild Projects="..\Cadastros\frm_Grupo_Cliente\dpk\grupo_cliente.dproj"/>
+    </Target>
+    <Target Name="grupo_cliente:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Grupo_Cliente\dpk\grupo_cliente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="grupo_cliente:Make">
+        <MSBuild Projects="..\Cadastros\frm_Grupo_Cliente\dpk\grupo_cliente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pracas">
+        <MSBuild Projects="..\Cadastros\frm_Pracas\dpk\pracas.dproj"/>
+    </Target>
+    <Target Name="pracas:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Pracas\dpk\pracas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pracas:Make">
+        <MSBuild Projects="..\Cadastros\frm_Pracas\dpk\pracas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="estados">
+        <MSBuild Projects="..\Cadastros\frm_Estados\dpk\estados.dproj"/>
+    </Target>
+    <Target Name="estados:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Estados\dpk\estados.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="estados:Make">
+        <MSBuild Projects="..\Cadastros\frm_Estados\dpk\estados.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="regioes">
+        <MSBuild Projects="..\Cadastros\frm_Regioes\dpk\regioes.dproj"/>
+    </Target>
+    <Target Name="regioes:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Regioes\dpk\regioes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="regioes:Make">
+        <MSBuild Projects="..\Cadastros\frm_Regioes\dpk\regioes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rotas">
+        <MSBuild Projects="..\Cadastros\frm_Rotas\dpk\rotas.dproj"/>
+    </Target>
+    <Target Name="rotas:Clean">
+        <MSBuild Projects="..\Cadastros\frm_Rotas\dpk\rotas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rotas:Make">
+        <MSBuild Projects="..\Cadastros\frm_Rotas\dpk\rotas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aliquotas_produtos">
+        <MSBuild Projects="..\Estoque\frm_Aliquotas\dpk\aliquotas_produtos.dproj"/>
+    </Target>
+    <Target Name="aliquotas_produtos:Clean">
+        <MSBuild Projects="..\Estoque\frm_Aliquotas\dpk\aliquotas_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aliquotas_produtos:Make">
+        <MSBuild Projects="..\Estoque\frm_Aliquotas\dpk\aliquotas_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="entrada_avulsa_prod">
+        <MSBuild Projects="..\Estoque\frm_Entrada_Avulsa_Prod\dpk\entrada_avulsa_prod.dproj"/>
+    </Target>
+    <Target Name="entrada_avulsa_prod:Clean">
+        <MSBuild Projects="..\Estoque\frm_Entrada_Avulsa_Prod\dpk\entrada_avulsa_prod.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="entrada_avulsa_prod:Make">
+        <MSBuild Projects="..\Estoque\frm_Entrada_Avulsa_Prod\dpk\entrada_avulsa_prod.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="entrada_notafiscal" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Estoque\frm_Entrada_NF\dpk\entrada_notafiscal.dproj"/>
+    </Target>
+    <Target Name="entrada_notafiscal:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Estoque\frm_Entrada_NF\dpk\entrada_notafiscal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="entrada_notafiscal:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Estoque\frm_Entrada_NF\dpk\entrada_notafiscal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="grupos_produtos">
+        <MSBuild Projects="..\Estoque\frm_Grupos\dpk\grupos_produtos.dproj"/>
+    </Target>
+    <Target Name="grupos_produtos:Clean">
+        <MSBuild Projects="..\Estoque\frm_Grupos\dpk\grupos_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="grupos_produtos:Make">
+        <MSBuild Projects="..\Estoque\frm_Grupos\dpk\grupos_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="marcas_produtos">
+        <MSBuild Projects="..\Estoque\frm_Marcas\dpk\marcas_produtos.dproj"/>
+    </Target>
+    <Target Name="marcas_produtos:Clean">
+        <MSBuild Projects="..\Estoque\frm_Marcas\dpk\marcas_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="marcas_produtos:Make">
+        <MSBuild Projects="..\Estoque\frm_Marcas\dpk\marcas_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="modelos_produtos">
+        <MSBuild Projects="..\Estoque\frm_Modelos\dpk\modelos_produtos.dproj"/>
+    </Target>
+    <Target Name="modelos_produtos:Clean">
+        <MSBuild Projects="..\Estoque\frm_Modelos\dpk\modelos_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="modelos_produtos:Make">
+        <MSBuild Projects="..\Estoque\frm_Modelos\dpk\modelos_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="filtros_produtos">
+        <MSBuild Projects="..\Servicos\frm_filtro_produtos\dpk\filtros_produtos.dproj"/>
+    </Target>
+    <Target Name="filtros_produtos:Clean">
+        <MSBuild Projects="..\Servicos\frm_filtro_produtos\dpk\filtros_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="filtros_produtos:Make">
+        <MSBuild Projects="..\Servicos\frm_filtro_produtos\dpk\filtros_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="produtos">
+        <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj"/>
+    </Target>
+    <Target Name="produtos:Clean">
+        <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="produtos:Make">
+        <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="saida_avulsa_prod">
+        <MSBuild Projects="..\Estoque\frm_Saida_Avulsa_Prod\dpk\saida_avulsa_prod.dproj"/>
+    </Target>
+    <Target Name="saida_avulsa_prod:Clean">
+        <MSBuild Projects="..\Estoque\frm_Saida_Avulsa_Prod\dpk\saida_avulsa_prod.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="saida_avulsa_prod:Make">
+        <MSBuild Projects="..\Estoque\frm_Saida_Avulsa_Prod\dpk\saida_avulsa_prod.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="saida_prod_avaria">
+        <MSBuild Projects="..\Estoque\frm_Saida_Prod_Avaria\dpk\saida_prod_avaria.dproj"/>
+    </Target>
+    <Target Name="saida_prod_avaria:Clean">
+        <MSBuild Projects="..\Estoque\frm_Saida_Prod_Avaria\dpk\saida_prod_avaria.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="saida_prod_avaria:Make">
+        <MSBuild Projects="..\Estoque\frm_Saida_Prod_Avaria\dpk\saida_prod_avaria.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="contas_receber">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Receber\dpk\contas_receber.dproj"/>
+    </Target>
+    <Target Name="contas_receber:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Receber\dpk\contas_receber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="contas_receber:Make">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Receber\dpk\contas_receber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="contas_pagar">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Pagar\dpk\contas_pagar.dproj"/>
+    </Target>
+    <Target Name="contas_pagar:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Pagar\dpk\contas_pagar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="contas_pagar:Make">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Pagar\dpk\contas_pagar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_auto">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Auto\dpk\baixa_contas_pagar_auto.dproj"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_auto:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Auto\dpk\baixa_contas_pagar_auto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_auto:Make">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Auto\dpk\baixa_contas_pagar_auto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_parcial" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Parcial\dpk\baixa_contas_pagar_parcial.dproj"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_parcial:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Parcial\dpk\baixa_contas_pagar_parcial.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="baixa_contas_pagar_parcial:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Pagar_Parcial\dpk\baixa_contas_pagar_parcial.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="baixa_contas_receber_auto">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Auto\dpk\baixa_contas_receber_auto.dproj"/>
+    </Target>
+    <Target Name="baixa_contas_receber_auto:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Auto\dpk\baixa_contas_receber_auto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="baixa_contas_receber_auto:Make">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Auto\dpk\baixa_contas_receber_auto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="baixa_contas_receber_parcial">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Parcial\dpk\baixa_contas_receber_parcial.dproj"/>
+    </Target>
+    <Target Name="baixa_contas_receber_parcial:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Parcial\dpk\baixa_contas_receber_parcial.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="baixa_contas_receber_parcial:Make">
+        <MSBuild Projects="..\Financeiro\frm_Baixa_Contas_Receber_Parcial\dpk\baixa_contas_receber_parcial.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="lanc_auto_contas_pagar">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Pagar\dpk\lanc_auto_contas_pagar.dproj"/>
+    </Target>
+    <Target Name="lanc_auto_contas_pagar:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Pagar\dpk\lanc_auto_contas_pagar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="lanc_auto_contas_pagar:Make">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Pagar\dpk\lanc_auto_contas_pagar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="lanc_auto_contas_receber">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Receber\dpk\lanc_auto_contas_receber.dproj"/>
+    </Target>
+    <Target Name="lanc_auto_contas_receber:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Receber\dpk\lanc_auto_contas_receber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="lanc_auto_contas_receber:Make">
+        <MSBuild Projects="..\Financeiro\frm_Lanc_Auto_Contas_Receber\dpk\lanc_auto_contas_receber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="bancos">
+        <MSBuild Projects="..\Financeiro\frm_Bancos\dpk\bancos.dproj"/>
+    </Target>
+    <Target Name="bancos:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Bancos\dpk\bancos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="bancos:Make">
+        <MSBuild Projects="..\Financeiro\frm_Bancos\dpk\bancos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="contas_bancarias">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Bancarias\dpk\contas_bancarias.dproj"/>
+    </Target>
+    <Target Name="contas_bancarias:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Bancarias\dpk\contas_bancarias.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="contas_bancarias:Make">
+        <MSBuild Projects="..\Financeiro\frm_Contas_Bancarias\dpk\contas_bancarias.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="movimentacao_bancaria">
+        <MSBuild Projects="..\Financeiro\frm_Movimentaca_Bancaria\dpk\movimentacao_bancaria.dproj"/>
+    </Target>
+    <Target Name="movimentacao_bancaria:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Movimentaca_Bancaria\dpk\movimentacao_bancaria.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="movimentacao_bancaria:Make">
+        <MSBuild Projects="..\Financeiro\frm_Movimentaca_Bancaria\dpk\movimentacao_bancaria.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="plano_contas">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas\dpk\plano_contas.dproj"/>
+    </Target>
+    <Target Name="plano_contas:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas\dpk\plano_contas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="plano_contas:Make">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas\dpk\plano_contas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="plano_contas_planejamento">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas_Planejamento\dpk\plano_contas_planejamento.dproj"/>
+    </Target>
+    <Target Name="plano_contas_planejamento:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas_Planejamento\dpk\plano_contas_planejamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="plano_contas_planejamento:Make">
+        <MSBuild Projects="..\Financeiro\frm_Plano_Contas_Planejamento\dpk\plano_contas_planejamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="projecao_plano_conta">
+        <MSBuild Projects="..\Financeiro\frm_Projecoes_Plano_Contas\dpk\projecao_plano_conta.dproj"/>
+    </Target>
+    <Target Name="projecao_plano_conta:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Projecoes_Plano_Contas\dpk\projecao_plano_conta.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="projecao_plano_conta:Make">
+        <MSBuild Projects="..\Financeiro\frm_Projecoes_Plano_Contas\dpk\projecao_plano_conta.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tipos_movimentacoes_bancarias">
+        <MSBuild Projects="..\Financeiro\frm_Tipos_Movimentacoes_Bancarias\dpk\tipos_movimentacoes_bancarias.dproj"/>
+    </Target>
+    <Target Name="tipos_movimentacoes_bancarias:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Tipos_Movimentacoes_Bancarias\dpk\tipos_movimentacoes_bancarias.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tipos_movimentacoes_bancarias:Make">
+        <MSBuild Projects="..\Financeiro\frm_Tipos_Movimentacoes_Bancarias\dpk\tipos_movimentacoes_bancarias.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="controle_obras">
+        <MSBuild Projects="..\Obras\frm_controle_obras\dpk\controle_obras.dproj"/>
+    </Target>
+    <Target Name="controle_obras:Clean">
+        <MSBuild Projects="..\Obras\frm_controle_obras\dpk\controle_obras.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="controle_obras:Make">
+        <MSBuild Projects="..\Obras\frm_controle_obras\dpk\controle_obras.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="termos_recebimento">
+        <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj"/>
+    </Target>
+    <Target Name="termos_recebimento:Clean">
+        <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="termos_recebimento:Make">
+        <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="termo_retirada">
+        <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj"/>
+    </Target>
+    <Target Name="termo_retirada:Clean">
+        <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="termo_retirada:Make">
+        <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="transf_pecas_servicos" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj"/>
+    </Target>
+    <Target Name="transf_pecas_servicos:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="transf_pecas_servicos:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tabela_preco" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj"/>
+    </Target>
+    <Target Name="tabela_preco:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tabela_preco:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_contas_receber_pagar">
+        <MSBuild Projects="..\Relatorios\graf_contas_receber_pagar\dpk\graf_contas_receber_pagar.dproj"/>
+    </Target>
+    <Target Name="graf_contas_receber_pagar:Clean">
+        <MSBuild Projects="..\Relatorios\graf_contas_receber_pagar\dpk\graf_contas_receber_pagar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_contas_receber_pagar:Make">
+        <MSBuild Projects="..\Relatorios\graf_contas_receber_pagar\dpk\graf_contas_receber_pagar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_evolutivo_anual">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_anual\dpk\graf_evolutivo_anual.dproj"/>
+    </Target>
+    <Target Name="graf_evolutivo_anual:Clean">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_anual\dpk\graf_evolutivo_anual.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_evolutivo_anual:Make">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_anual\dpk\graf_evolutivo_anual.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_evolutivo_os">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj"/>
+    </Target>
+    <Target Name="graf_evolutivo_os:Clean">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_evolutivo_os:Make">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_forma_pagamento">
+        <MSBuild Projects="..\Relatorios\graf_forma_pagamento\dpk\graf_forma_pagamento.dproj"/>
+    </Target>
+    <Target Name="graf_forma_pagamento:Clean">
+        <MSBuild Projects="..\Relatorios\graf_forma_pagamento\dpk\graf_forma_pagamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_forma_pagamento:Make">
+        <MSBuild Projects="..\Relatorios\graf_forma_pagamento\dpk\graf_forma_pagamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_resumo_financeiro_anual">
+        <MSBuild Projects="..\Relatorios\graf_resumo_financeiro_anual\dpk\graf_resumo_financeiro_anual.dproj"/>
+    </Target>
+    <Target Name="graf_resumo_financeiro_anual:Clean">
+        <MSBuild Projects="..\Relatorios\graf_resumo_financeiro_anual\dpk\graf_resumo_financeiro_anual.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_resumo_financeiro_anual:Make">
+        <MSBuild Projects="..\Relatorios\graf_resumo_financeiro_anual\dpk\graf_resumo_financeiro_anual.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_planejamento_anual">
+        <MSBuild Projects="..\Relatorios\graf_planejamento_anual\dpk\graf_planejamento_anual.dproj"/>
+    </Target>
+    <Target Name="graf_planejamento_anual:Clean">
+        <MSBuild Projects="..\Relatorios\graf_planejamento_anual\dpk\graf_planejamento_anual.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_planejamento_anual:Make">
+        <MSBuild Projects="..\Relatorios\graf_planejamento_anual\dpk\graf_planejamento_anual.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_resumo_diario">
+        <MSBuild Projects="..\Relatorios\graf_resumo_diario\dpk\graf_resumo_diario.dproj"/>
+    </Target>
+    <Target Name="graf_resumo_diario:Clean">
+        <MSBuild Projects="..\Relatorios\graf_resumo_diario\dpk\graf_resumo_diario.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_resumo_diario:Make">
+        <MSBuild Projects="..\Relatorios\graf_resumo_diario\dpk\graf_resumo_diario.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="graf_evolutivo_plano_contas">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_plano_contas\dpk\graf_evolutivo_plano_contas.dproj"/>
+    </Target>
+    <Target Name="graf_evolutivo_plano_contas:Clean">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_plano_contas\dpk\graf_evolutivo_plano_contas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="graf_evolutivo_plano_contas:Make">
+        <MSBuild Projects="..\Relatorios\graf_evolutivo_plano_contas\dpk\graf_evolutivo_plano_contas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_abc_financas">
+        <MSBuild Projects="..\Relatorios\rel_abc_financas\dpk\rel_abc_financas.dproj"/>
+    </Target>
+    <Target Name="rel_abc_financas:Clean">
+        <MSBuild Projects="..\Relatorios\rel_abc_financas\dpk\rel_abc_financas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_abc_financas:Make">
+        <MSBuild Projects="..\Relatorios\rel_abc_financas\dpk\rel_abc_financas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_anual_evolutivo">
+        <MSBuild Projects="..\Relatorios\rel_anual_evolutivo\dpk\rel_anual_evolutivo.dproj"/>
+    </Target>
+    <Target Name="rel_anual_evolutivo:Clean">
+        <MSBuild Projects="..\Relatorios\rel_anual_evolutivo\dpk\rel_anual_evolutivo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_anual_evolutivo:Make">
+        <MSBuild Projects="..\Relatorios\rel_anual_evolutivo\dpk\rel_anual_evolutivo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_clientes">
+        <MSBuild Projects="..\Relatorios\rel_clientes\dpk\rel_clientes.dproj"/>
+    </Target>
+    <Target Name="rel_clientes:Clean">
+        <MSBuild Projects="..\Relatorios\rel_clientes\dpk\rel_clientes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_clientes:Make">
+        <MSBuild Projects="..\Relatorios\rel_clientes\dpk\rel_clientes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_contabil">
+        <MSBuild Projects="..\Relatorios\rel_contabil\dpk\rel_contabil.dproj"/>
+    </Target>
+    <Target Name="rel_contabil:Clean">
+        <MSBuild Projects="..\Relatorios\rel_contabil\dpk\rel_contabil.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_contabil:Make">
+        <MSBuild Projects="..\Relatorios\rel_contabil\dpk\rel_contabil.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_contas_bancarias">
+        <MSBuild Projects="..\Relatorios\rel_contas_bancarias\dpk\rel_contas_bancarias.dproj"/>
+    </Target>
+    <Target Name="rel_contas_bancarias:Clean">
+        <MSBuild Projects="..\Relatorios\rel_contas_bancarias\dpk\rel_contas_bancarias.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_contas_bancarias:Make">
+        <MSBuild Projects="..\Relatorios\rel_contas_bancarias\dpk\rel_contas_bancarias.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_contas_receber" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber\dpk\rel_contas_receber.dproj"/>
+    </Target>
+    <Target Name="rel_contas_receber:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber\dpk\rel_contas_receber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_contas_receber:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber\dpk\rel_contas_receber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_contas_receber_x_pagar">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber_X_pagar\dpk\rel_contas_receber_x_pagar.dproj"/>
+    </Target>
+    <Target Name="rel_contas_receber_x_pagar:Clean">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber_X_pagar\dpk\rel_contas_receber_x_pagar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_contas_receber_x_pagar:Make">
+        <MSBuild Projects="..\Relatorios\rel_contas_receber_X_pagar\dpk\rel_contas_receber_x_pagar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_curva_abc_estoque">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_estoque\dpk\rel_curva_abc_estoque.dproj"/>
+    </Target>
+    <Target Name="rel_curva_abc_estoque:Clean">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_estoque\dpk\rel_curva_abc_estoque.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_curva_abc_estoque:Make">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_estoque\dpk\rel_curva_abc_estoque.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_curva_abc_ordem_servico">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj"/>
+    </Target>
+    <Target Name="rel_curva_abc_ordem_servico:Clean">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_curva_abc_ordem_servico:Make">
+        <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_entrada_avulsa_produtos">
+        <MSBuild Projects="..\Relatorios\rel_entrada_avulsa_produtos\dpk\rel_entrada_avulsa_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_entrada_avulsa_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_entrada_avulsa_produtos\dpk\rel_entrada_avulsa_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_entrada_avulsa_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_entrada_avulsa_produtos\dpk\rel_entrada_avulsa_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_entrada_nota_fiscal">
+        <MSBuild Projects="..\Relatorios\rel_entrada_nota_fiscal\dpk\rel_entrada_nota_fiscal.dproj"/>
+    </Target>
+    <Target Name="rel_entrada_nota_fiscal:Clean">
+        <MSBuild Projects="..\Relatorios\rel_entrada_nota_fiscal\dpk\rel_entrada_nota_fiscal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_entrada_nota_fiscal:Make">
+        <MSBuild Projects="..\Relatorios\rel_entrada_nota_fiscal\dpk\rel_entrada_nota_fiscal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_fornecedores">
+        <MSBuild Projects="..\Relatorios\rel_fornecedores\dpk\rel_fornecedores.dproj"/>
+    </Target>
+    <Target Name="rel_fornecedores:Clean">
+        <MSBuild Projects="..\Relatorios\rel_fornecedores\dpk\rel_fornecedores.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_fornecedores:Make">
+        <MSBuild Projects="..\Relatorios\rel_fornecedores\dpk\rel_fornecedores.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_grupos_produtos">
+        <MSBuild Projects="..\Relatorios\rel_grupos_produtos\dpk\rel_grupos_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_grupos_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_grupos_produtos\dpk\rel_grupos_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_grupos_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_grupos_produtos\dpk\rel_grupos_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_livro_caixa" DependsOnTargets="Pro_Funcoes;basico">
+        <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj"/>
+    </Target>
+    <Target Name="rel_livro_caixa:Clean" DependsOnTargets="Pro_Funcoes:Clean;basico:Clean">
+        <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_livro_caixa:Make" DependsOnTargets="Pro_Funcoes:Make;basico:Make">
+        <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_marcas_produtos">
+        <MSBuild Projects="..\Relatorios\rel_marcas_produtos\dpk\rel_marcas_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_marcas_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_marcas_produtos\dpk\rel_marcas_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_marcas_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_marcas_produtos\dpk\rel_marcas_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_modelos_produtos">
+        <MSBuild Projects="..\Relatorios\rel_modelos_produtos\dpk\rel_modelos_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_modelos_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_modelos_produtos\dpk\rel_modelos_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_modelos_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_modelos_produtos\dpk\rel_modelos_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_plano_contas">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas\dpk\rel_plano_contas.dproj"/>
+    </Target>
+    <Target Name="rel_plano_contas:Clean">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas\dpk\rel_plano_contas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_plano_contas:Make">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas\dpk\rel_plano_contas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_plano_contas_planejamento">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas_planejamento\dpk\rel_plano_contas_planejamento.dproj"/>
+    </Target>
+    <Target Name="rel_plano_contas_planejamento:Clean">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas_planejamento\dpk\rel_plano_contas_planejamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_plano_contas_planejamento:Make">
+        <MSBuild Projects="..\Relatorios\rel_plano_contas_planejamento\dpk\rel_plano_contas_planejamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_pracas">
+        <MSBuild Projects="..\Relatorios\rel_pracas\dpk\rel_pracas.dproj"/>
+    </Target>
+    <Target Name="rel_pracas:Clean">
+        <MSBuild Projects="..\Relatorios\rel_pracas\dpk\rel_pracas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_pracas:Make">
+        <MSBuild Projects="..\Relatorios\rel_pracas\dpk\rel_pracas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_saida_avaria_produtos">
+        <MSBuild Projects="..\Relatorios\rel_saida_avaria_produtos\dpk\rel_saida_avaria_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_saida_avaria_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_saida_avaria_produtos\dpk\rel_saida_avaria_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_saida_avaria_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_saida_avaria_produtos\dpk\rel_saida_avaria_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_saida_avulsa_produtos">
+        <MSBuild Projects="..\Relatorios\rel_saida_avulsa_produtos\dpk\rel_saida_avulsa_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_saida_avulsa_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_saida_avulsa_produtos\dpk\rel_saida_avulsa_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_saida_avulsa_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_saida_avulsa_produtos\dpk\rel_saida_avulsa_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_tabela_preco">
+        <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj"/>
+    </Target>
+    <Target Name="rel_tabela_preco:Clean">
+        <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_tabela_preco:Make">
+        <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="statusos">
+        <MSBuild Projects="..\Servicos\frm_status_os\dpk\statusos.dproj"/>
+    </Target>
+    <Target Name="statusos:Clean">
+        <MSBuild Projects="..\Servicos\frm_status_os\dpk\statusos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="statusos:Make">
+        <MSBuild Projects="..\Servicos\frm_status_os\dpk\statusos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_produtos">
+        <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj"/>
+    </Target>
+    <Target Name="rel_produtos:Clean">
+        <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_produtos:Make">
+        <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="geradorkey">
+        <MSBuild Projects="..\Administrativo\frm_geradorkey\dpk\geradorkey.dproj"/>
+    </Target>
+    <Target Name="geradorkey:Clean">
+        <MSBuild Projects="..\Administrativo\frm_geradorkey\dpk\geradorkey.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="geradorkey:Make">
+        <MSBuild Projects="..\Administrativo\frm_geradorkey\dpk\geradorkey.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="cartao_credito">
+        <MSBuild Projects="..\Financeiro\frm_Cartao_Credito\dpk\cartao_credito.dproj"/>
+    </Target>
+    <Target Name="cartao_credito:Clean">
+        <MSBuild Projects="..\Financeiro\frm_Cartao_Credito\dpk\cartao_credito.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cartao_credito:Make">
+        <MSBuild Projects="..\Financeiro\frm_Cartao_Credito\dpk\cartao_credito.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rel_patrimonio">
+        <MSBuild Projects="..\Relatorios\rel_patrimonio\dpk\rel_patrimonio.dproj"/>
+    </Target>
+    <Target Name="rel_patrimonio:Clean">
+        <MSBuild Projects="..\Relatorios\rel_patrimonio\dpk\rel_patrimonio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rel_patrimonio:Make">
+        <MSBuild Projects="..\Relatorios\rel_patrimonio\dpk\rel_patrimonio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Pro_Funcoes;basico;AnOnImUs;ordem_servico;configuracao;rel_ordem_servicos;rel_contas_pagar;investimentos;cheques;agenda;rel_agenda;graf_medicao_planocontas;rel_irpf;patrimonio;tipoagendamento;unidademedida;teleatendimentoOS;status_atendimento;vendas_orcamento;faturamento;altera_preco_venda;empresas;menus;usuarios;clientes;fornecedores;grupo_cliente;pracas;estados;regioes;rotas;aliquotas_produtos;entrada_avulsa_prod;entrada_notafiscal;grupos_produtos;marcas_produtos;modelos_produtos;filtros_produtos;produtos;saida_avulsa_prod;saida_prod_avaria;contas_receber;contas_pagar;baixa_contas_pagar_auto;baixa_contas_pagar_parcial;baixa_contas_receber_auto;baixa_contas_receber_parcial;lanc_auto_contas_pagar;lanc_auto_contas_receber;bancos;contas_bancarias;movimentacao_bancaria;plano_contas;plano_contas_planejamento;projecao_plano_conta;tipos_movimentacoes_bancarias;controle_obras;termos_recebimento;termo_retirada;transf_pecas_servicos;tabela_preco;graf_contas_receber_pagar;graf_evolutivo_anual;graf_evolutivo_os;graf_forma_pagamento;graf_resumo_financeiro_anual;graf_planejamento_anual;graf_resumo_diario;graf_evolutivo_plano_contas;rel_abc_financas;rel_anual_evolutivo;rel_clientes;rel_contabil;rel_contas_bancarias;rel_contas_receber;rel_contas_receber_x_pagar;rel_curva_abc_estoque;rel_curva_abc_ordem_servico;rel_entrada_avulsa_produtos;rel_entrada_nota_fiscal;rel_fornecedores;rel_grupos_produtos;rel_livro_caixa;rel_marcas_produtos;rel_modelos_produtos;rel_plano_contas;rel_plano_contas_planejamento;rel_pracas;rel_saida_avaria_produtos;rel_saida_avulsa_produtos;rel_tabela_preco;statusos;rel_produtos;geradorkey;cartao_credito;rel_patrimonio"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Pro_Funcoes:Clean;basico:Clean;AnOnImUs:Clean;ordem_servico:Clean;configuracao:Clean;rel_ordem_servicos:Clean;rel_contas_pagar:Clean;investimentos:Clean;cheques:Clean;agenda:Clean;rel_agenda:Clean;graf_medicao_planocontas:Clean;rel_irpf:Clean;patrimonio:Clean;tipoagendamento:Clean;unidademedida:Clean;teleatendimentoOS:Clean;status_atendimento:Clean;vendas_orcamento:Clean;faturamento:Clean;altera_preco_venda:Clean;empresas:Clean;menus:Clean;usuarios:Clean;clientes:Clean;fornecedores:Clean;grupo_cliente:Clean;pracas:Clean;estados:Clean;regioes:Clean;rotas:Clean;aliquotas_produtos:Clean;entrada_avulsa_prod:Clean;entrada_notafiscal:Clean;grupos_produtos:Clean;marcas_produtos:Clean;modelos_produtos:Clean;filtros_produtos:Clean;produtos:Clean;saida_avulsa_prod:Clean;saida_prod_avaria:Clean;contas_receber:Clean;contas_pagar:Clean;baixa_contas_pagar_auto:Clean;baixa_contas_pagar_parcial:Clean;baixa_contas_receber_auto:Clean;baixa_contas_receber_parcial:Clean;lanc_auto_contas_pagar:Clean;lanc_auto_contas_receber:Clean;bancos:Clean;contas_bancarias:Clean;movimentacao_bancaria:Clean;plano_contas:Clean;plano_contas_planejamento:Clean;projecao_plano_conta:Clean;tipos_movimentacoes_bancarias:Clean;controle_obras:Clean;termos_recebimento:Clean;termo_retirada:Clean;transf_pecas_servicos:Clean;tabela_preco:Clean;graf_contas_receber_pagar:Clean;graf_evolutivo_anual:Clean;graf_evolutivo_os:Clean;graf_forma_pagamento:Clean;graf_resumo_financeiro_anual:Clean;graf_planejamento_anual:Clean;graf_resumo_diario:Clean;graf_evolutivo_plano_contas:Clean;rel_abc_financas:Clean;rel_anual_evolutivo:Clean;rel_clientes:Clean;rel_contabil:Clean;rel_contas_bancarias:Clean;rel_contas_receber:Clean;rel_contas_receber_x_pagar:Clean;rel_curva_abc_estoque:Clean;rel_curva_abc_ordem_servico:Clean;rel_entrada_avulsa_produtos:Clean;rel_entrada_nota_fiscal:Clean;rel_fornecedores:Clean;rel_grupos_produtos:Clean;rel_livro_caixa:Clean;rel_marcas_produtos:Clean;rel_modelos_produtos:Clean;rel_plano_contas:Clean;rel_plano_contas_planejamento:Clean;rel_pracas:Clean;rel_saida_avaria_produtos:Clean;rel_saida_avulsa_produtos:Clean;rel_tabela_preco:Clean;statusos:Clean;rel_produtos:Clean;geradorkey:Clean;cartao_credito:Clean;rel_patrimonio:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Pro_Funcoes:Make;basico:Make;AnOnImUs:Make;ordem_servico:Make;configuracao:Make;rel_ordem_servicos:Make;rel_contas_pagar:Make;investimentos:Make;cheques:Make;agenda:Make;rel_agenda:Make;graf_medicao_planocontas:Make;rel_irpf:Make;patrimonio:Make;tipoagendamento:Make;unidademedida:Make;teleatendimentoOS:Make;status_atendimento:Make;vendas_orcamento:Make;faturamento:Make;altera_preco_venda:Make;empresas:Make;menus:Make;usuarios:Make;clientes:Make;fornecedores:Make;grupo_cliente:Make;pracas:Make;estados:Make;regioes:Make;rotas:Make;aliquotas_produtos:Make;entrada_avulsa_prod:Make;entrada_notafiscal:Make;grupos_produtos:Make;marcas_produtos:Make;modelos_produtos:Make;filtros_produtos:Make;produtos:Make;saida_avulsa_prod:Make;saida_prod_avaria:Make;contas_receber:Make;contas_pagar:Make;baixa_contas_pagar_auto:Make;baixa_contas_pagar_parcial:Make;baixa_contas_receber_auto:Make;baixa_contas_receber_parcial:Make;lanc_auto_contas_pagar:Make;lanc_auto_contas_receber:Make;bancos:Make;contas_bancarias:Make;movimentacao_bancaria:Make;plano_contas:Make;plano_contas_planejamento:Make;projecao_plano_conta:Make;tipos_movimentacoes_bancarias:Make;controle_obras:Make;termos_recebimento:Make;termo_retirada:Make;transf_pecas_servicos:Make;tabela_preco:Make;graf_contas_receber_pagar:Make;graf_evolutivo_anual:Make;graf_evolutivo_os:Make;graf_forma_pagamento:Make;graf_resumo_financeiro_anual:Make;graf_planejamento_anual:Make;graf_resumo_diario:Make;graf_evolutivo_plano_contas:Make;rel_abc_financas:Make;rel_anual_evolutivo:Make;rel_clientes:Make;rel_contabil:Make;rel_contas_bancarias:Make;rel_contas_receber:Make;rel_contas_receber_x_pagar:Make;rel_curva_abc_estoque:Make;rel_curva_abc_ordem_servico:Make;rel_entrada_avulsa_produtos:Make;rel_entrada_nota_fiscal:Make;rel_fornecedores:Make;rel_grupos_produtos:Make;rel_livro_caixa:Make;rel_marcas_produtos:Make;rel_modelos_produtos:Make;rel_plano_contas:Make;rel_plano_contas_planejamento:Make;rel_pracas:Make;rel_saida_avaria_produtos:Make;rel_saida_avulsa_produtos:Make;rel_tabela_preco:Make;statusos:Make;rel_produtos:Make;geradorkey:Make;cartao_credito:Make;rel_patrimonio:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,210 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{88c68bec-5584-4d0e-9f27-eaad47867f9d}</ProjectGuid>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <DCC_DependencyCheckOutputName>..\..\bin\AnOnImUs.exe</DCC_DependencyCheckOutputName>
+        <MainSource>AnOnImUs.dpr</MainSource>
+        <ProjectVersion>17.2</ProjectVersion>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Base>True</Base>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>AnOnImUs</SanitizedProjectName>
+        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
+        <VerInfo_Build>417</VerInfo_Build>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;VclTee;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=AnOnImUs.Info - Sistemas Comerciais;FileDescription=;FileVersion=2.1.1.417;InternalName=;LegalCopyright=AnOnImUs.Info - Sistemas Comerciais;LegalTrademarks=;OriginalFilename=;ProductName=AnOnImUs.Info;ProductVersion=2.1.1.02;Comments=AnOnImUs.Info - Sistemas Comerciais</VerInfo_Keys>
+        <UsePackages>true</UsePackages>
+        <DCC_DependencyCheckOutputName>AnOnImUs.exe</DCC_DependencyCheckOutputName>
+        <DCC_UsePackage>vcl;rtl;vclx;vclactnband;dbrtl;vcldb;bdertl;vcldbx;dsnap;dbxcds;dbexpress;DbxCommonDriver;dsnapcon;teeUI;tee;teedb;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;VclSmp;vclie;webdsnap;inetdbbde;inetdbxpress;soaprtl;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_UsePackage>office2K;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>AnOnImUs_Icon5.ico</Icon_MainIcon>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>office2K;$(DCC_UsePackage)</DCC_UsePackage>
+        <Icon_MainIcon>AnOnImUs_Icon5.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <Version>7.0</Version>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_BplOutput>..\..\bin</DCC_BplOutput>
+        <DCC_DependencyCheckOutputName>..\..\bin\AnOnImUs.exe</DCC_DependencyCheckOutputName>
+        <Version>7.0</Version>
+        <DCC_ExeOutput>..\..\bin</DCC_ExeOutput>
+        <DCC_DcuOutput>..\..\dcu</DCC_DcuOutput>
+        <DCC_ObjOutput>..\..\dcu</DCC_ObjOutput>
+        <DCC_HppOutput>..\..\dcu</DCC_HppOutput>
+        <DCC_DcpOutput>..\</DCC_DcpOutput>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_BplOutput>$(AnOnImUs_Path)\bin</DCC_BplOutput>
+        <DCC_HppOutput>$(AnOnImUs_Path)\dcu</DCC_HppOutput>
+        <DCC_ExeOutput>$(AnOnImUs_Path)\bin</DCC_ExeOutput>
+        <DCC_DcuOutput>$(AnOnImUs_Path)\dcu</DCC_DcuOutput>
+        <DCC_DcpOutput>$(AnOnImUs_Path)\</DCC_DcpOutput>
+        <DCC_ObjOutput>$(AnOnImUs_Path)\dcu</DCC_ObjOutput>
+        <Icon_MainIcon>AnOnImUs_Icon4.ico</Icon_MainIcon>
+        <VerInfo_MajorVer>1</VerInfo_MajorVer>
+        <VerInfo_Build>0</VerInfo_Build>
+        <VerInfo_Release>0</VerInfo_Release>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Parameters/>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">True</VersionInfo>
+                    <VersionInfo Name="MajorVer">2</VersionInfo>
+                    <VersionInfo Name="MinorVer">1</VersionInfo>
+                    <VersionInfo Name="Release">1</VersionInfo>
+                    <VersionInfo Name="Build">446</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1046</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">AnOnImUs.Info - Sistemas Comerciais</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">2.1.1.446</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright">AnOnImUs.Info - Sistemas Comerciais</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName">AnOnImUs.Info</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductVersion">2.1.1.02</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments">AnOnImUs.Info - Sistemas Comerciais</VersionInfoKeys>
+                </VersionInfoKeys>
+                <Source>
+                    <Source Name="MainSource">AnOnImUs.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k190.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp190.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k190.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp190.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="PidUtils.pas"/>
+        <DCCReference Include="udmConexao.pas">
+            <Form>dmConexao</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ufConfDataBase.pas">
+            <Form>fConfDataBase</Form>
+        </DCCReference>
+        <DCCReference Include="ufHelp.pas">
+            <Form>fHelp</Form>
+        </DCCReference>
+        <DCCReference Include="ufLicenca.pas">
+            <Form>fLicenca</Form>
+        </DCCReference>
+        <DCCReference Include="ufLogin.pas">
+            <Form>fLogin</Form>
+        </DCCReference>
+        <DCCReference Include="ufMensagens.pas">
+            <Form>fMensagens</Form>
+        </DCCReference>
+        <DCCReference Include="ufPrincipal.pas">
+            <Form>fPrincipal</Form>
+        </DCCReference>
+        <DCCReference Include="ufRegistro.pas">
+            <Form>fRegistro</Form>
+        </DCCReference>
+        <DCCReference Include="ufSplash.pas">
+            <Form>fSplash</Form>
+        </DCCReference>
+        <DCCReference Include="uUpdate.pas"/>
+        <DCCReference Include="ufVersao.pas">
+            <Form>fVersao</Form>
+        </DCCReference>
+        <DCCReference Include="ufAtualizacao.pas">
+            <Form>fAtualizacao</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+    <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

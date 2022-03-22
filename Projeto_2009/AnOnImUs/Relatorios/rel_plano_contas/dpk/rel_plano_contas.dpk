@@ -1,0 +1,37 @@
+package rel_plano_contas;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  basico;
+
+contains
+  udmRel_Plano_Contas in '..\udmRel_Plano_Contas.pas' {dmRel_Plano_Contas: TDataModule},
+  ufRel_Plano_Contas in '..\ufRel_Plano_Contas.pas' {fRel_Plano_Contas},
+  ufRel_Plano_Contas_Sintetico in '..\ufRel_Plano_Contas_Sintetico.pas' {fRel_Plano_Contas_Sintetico};
+
+end.

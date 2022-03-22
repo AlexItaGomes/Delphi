@@ -1,0 +1,2 @@
+inherited dmInvestimentos: TdmInvestimentos
+end

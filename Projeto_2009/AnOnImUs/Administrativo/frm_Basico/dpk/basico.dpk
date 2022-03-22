@@ -1,0 +1,54 @@
+package basico;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  vclie,
+  Pro_Funcoes,
+  vclimg,
+  bdertl,
+  frx19,
+  frxDB19,
+  fs19,
+  RtmRxDB190,
+  QR5RunDXE5,
+  frxe19;
+
+contains
+  udmBasico in '..\udmBasico.pas' {dmBasico: TDataModule},
+  udmFrPesquisa in '..\udmFrPesquisa.pas' {dmFrPesquisa: TDataModule},
+  ufAjuda in '..\ufAjuda.pas' {fAjuda},
+  ufBasico in '..\ufBasico.pas' {fBasico},
+  ufCadastro in '..\ufCadastro.pas' {fCadastro},
+  ufImpressoes in '..\ufImpressoes.pas' {fImpressoes},
+  ufPesquisa in '..\ufPesquisa.pas' {fPesquisa},
+  ufrPesqDuplo in '..\ufrPesqDuplo.pas' {frPesqDuplo: TFrame},
+  uFrPesqIndividual in '..\uFrPesqIndividual.pas' {frPesqIndividual: TFrame},
+  uFrPesquisa in '..\uFrPesquisa.pas' {frPesquisa: TFrame};
+
+end.

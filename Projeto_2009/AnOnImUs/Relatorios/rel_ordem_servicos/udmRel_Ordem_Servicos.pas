@@ -1,0 +1,314 @@
+unit udmRel_Ordem_Servicos;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, udmBasico, FMTBcd, DBClient, Provider, DB, SqlExpr, QuickRpt, QRCtrls;
+
+type
+  TdmRel_Ordem_Servico = class(TdmBasico)
+    qryRel_Ordem_Servico: TSQLQuery;
+    dspRel_Ordem_Servico: TDataSetProvider;
+    cdsRel_Ordem_Servico: TClientDataSet;
+    dsRel_Ordem_Servico: TDataSource;
+    cdsRel_Ordem_ServicoORDS_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_EMPR_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_CLIE_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_CLIE_EMPR_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_TPRC_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_TPRC_EMPR_ID: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_DTA_INSTALACAO: TDateField;
+    cdsRel_Ordem_ServicoORDS_GENE_EMPR_ID_TIPO_OS: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_GENE_TGEN_ID_TIPO_OS: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_GENE_ID_TIPO_OS: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_STATUS: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_USER_ID_TEC: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_PROD_ID_EQUIP: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_PROD_EMPR_ID_EQUIP: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_NR_PEDIDO_SERIE: TStringField;
+    cdsRel_Ordem_ServicoORDS_VLR_TOTAL_OS: TFMTBCDField;
+    cdsRel_Ordem_ServicoORDS_VLR_DESCONTO: TFMTBCDField;
+    cdsRel_Ordem_ServicoORDS_VLR_PAGO: TFMTBCDField;
+    cdsRel_Ordem_ServicoORDS_OBSERVACAO: TBlobField;
+    cdsRel_Ordem_ServicoORDS_INFORMACOES: TBlobField;
+    cdsRel_Ordem_ServicoORDS_USER_ID_CANC: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_MOTIVO_CANC: TStringField;
+    cdsRel_Ordem_ServicoORDS_DTA_CANC: TDateField;
+    cdsRel_Ordem_ServicoORDS_DTA_ENTREGA: TDateField;
+    cdsRel_Ordem_ServicoORDS_USER_ID_ENTREG: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_BAIXADO_ESTOQUE: TIntegerField;
+    cdsRel_Ordem_ServicoORDS_DTA_CADASTRO: TDateField;
+    cdsRel_Ordem_ServicoORDS_USER_ID: TIntegerField;
+    cdsRel_Ordem_ServicoCLIE_RAZAO_SOCIAL: TStringField;
+    cdsRel_Ordem_ServicoCLIE_CEP: TStringField;
+    cdsRel_Ordem_ServicoCLIE_ENDERECO: TStringField;
+    cdsRel_Ordem_ServicoCLIE_BAIRRO: TStringField;
+    cdsRel_Ordem_ServicoCLIE_TELEFONE1: TStringField;
+    cdsRel_Ordem_ServicoCLIE_TELEFONE2: TStringField;
+    cdsRel_Ordem_ServicoCLIE_TELEFONE3: TStringField;
+    cdsRel_Ordem_ServicoCLIE_TELEFONE4: TStringField;
+    cdsRel_Ordem_ServicoPRACA: TStringField;
+    cdsRel_Ordem_ServicoUF: TStringField;
+    cdsRel_Ordem_ServicoTIPO_OS: TStringField;
+    cdsRel_Ordem_ServicoORDS_STATUS_1: TStringField;
+    cdsRel_Ordem_ServicoUSER_NOME_COMPLETO: TStringField;
+    cdsRel_Ordem_ServicoPROD_DESCRICAO: TStringField;
+    cdsRel_Ordem_ServicoPROD_GARANTIA: TIntegerField;
+    cdsRel_Ordem_ServicoMARCA_PROD: TStringField;
+    cdsRel_Ordem_ServicoMODELO_PROD: TStringField;
+    cdsRel_Ordem_ServicoPROD_UNIDADE: TStringField;
+    qryOrdemServicoItens: TSQLQuery;
+    qryOrdemServicoItensODIT_ID: TIntegerField;
+    qryOrdemServicoItensODIT_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_ORDS_ID: TIntegerField;
+    qryOrdemServicoItensODIT_ORDS_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_ORDS_CLIE_ID: TIntegerField;
+    qryOrdemServicoItensODIT_ORDS_CLIE_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_TPRC_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_TPRC_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_PROD_ID: TIntegerField;
+    qryOrdemServicoItensODIT_TPIT_PROD_EMPR_ID: TIntegerField;
+    qryOrdemServicoItensODIT_VLR_UNITARIO: TFMTBCDField;
+    qryOrdemServicoItensODIT_QTDE: TFMTBCDField;
+    qryOrdemServicoItensODIT_VLR_TOTAL: TFMTBCDField;
+    qryOrdemServicoItensODIT_DTA_CADASTRO: TDateField;
+    qryOrdemServicoItensODIT_USER_ID: TIntegerField;
+    qryOrdemServicoItensPROD_DESCRICAO: TStringField;
+    qryOrdemServicoItensPROD_UNIDADE: TStringField;
+    qryOrdemServicoItensMARCA_PROD: TStringField;
+    qryOrdemServicoItensMODELO_PROD: TStringField;
+    qryOrdemServicoItensPROD_GARANTIA: TIntegerField;
+    dspOrdemServicoItens: TDataSetProvider;
+    cdsOrdemServicoItens: TClientDataSet;
+    cdsOrdemServicoItensODIT_TPIT_PROD_ID: TIntegerField;
+    cdsOrdemServicoItensPROD_DESCRICAO: TStringField;
+    cdsOrdemServicoItensPROD_UNIDADE: TStringField;
+    cdsOrdemServicoItensPROD_GARANTIA: TIntegerField;
+    cdsOrdemServicoItensODIT_VLR_UNITARIO: TFMTBCDField;
+    cdsOrdemServicoItensODIT_QTDE: TFMTBCDField;
+    cdsOrdemServicoItensODIT_VLR_TOTAL: TFMTBCDField;
+    cdsOrdemServicoItensMARCA_PROD: TStringField;
+    cdsOrdemServicoItensMODELO_PROD: TStringField;
+    cdsOrdemServicoItensODIT_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_ORDS_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_ORDS_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_ORDS_CLIE_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_ORDS_CLIE_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_TPIT_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_TPIT_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_TPIT_TPRC_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_TPIT_TPRC_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_TPIT_PROD_EMPR_ID: TIntegerField;
+    cdsOrdemServicoItensODIT_DTA_CADASTRO: TDateField;
+    cdsOrdemServicoItensODIT_USER_ID: TIntegerField;
+    cdsOrdemServicoItensTOTALITENS: TAggregateField;
+    dsOrdemServicoItens: TDataSource;
+    qryAcertos_OS: TSQLQuery;
+    qryAcertos_OSODAC_ID: TIntegerField;
+    qryAcertos_OSODAC_EMPR_ID: TIntegerField;
+    qryAcertos_OSODAC_ORDS_ID: TIntegerField;
+    qryAcertos_OSODAC_ORDS_EMPR_ID: TIntegerField;
+    qryAcertos_OSODAC_ORDS_CLIE_ID: TIntegerField;
+    qryAcertos_OSODAC_ORDS_CLIE_EMPR_ID: TIntegerField;
+    qryAcertos_OSODAC_GENE_EMPR_ID_TIPO_DOC: TIntegerField;
+    qryAcertos_OSODAC_GENE_TGEN_ID_TIPO_DOC: TIntegerField;
+    qryAcertos_OSODAC_GENE_ID_TIPO_DOC: TIntegerField;
+    qryAcertos_OSODAC_GENE_EMPR_ID_BCO: TIntegerField;
+    qryAcertos_OSODAC_GENE_TGEN_ID_BCO: TIntegerField;
+    qryAcertos_OSODAC_GENE_ID_BCO: TIntegerField;
+    qryAcertos_OSODAC_NR_DOC: TStringField;
+    qryAcertos_OSODAC_NR_AGENCIA: TStringField;
+    qryAcertos_OSODAC_NR_CONTA: TStringField;
+    qryAcertos_OSODAC_TITULAR: TStringField;
+    qryAcertos_OSODAC_DTA_VCTO: TDateField;
+    qryAcertos_OSODAC_VLR_DOC: TFMTBCDField;
+    qryAcertos_OSODAC_STATUS: TIntegerField;
+    qryAcertos_OSODAC_DTA_CADASTRO: TDateField;
+    qryAcertos_OSODAC_USER_ID: TIntegerField;
+    qryAcertos_OSTIPO_DOC: TStringField;
+    qryAcertos_OSBANCO: TStringField;
+    qryAcertos_OSCOD_BANCO: TStringField;
+    dspAcertos_OS: TDataSetProvider;
+    cdsAcertos_OS: TClientDataSet;
+    cdsAcertos_OSTIPO_DOC: TStringField;
+    cdsAcertos_OSODAC_VLR_DOC: TFMTBCDField;
+    cdsAcertos_OSCOD_BANCO: TStringField;
+    cdsAcertos_OSBANCO: TStringField;
+    cdsAcertos_OSODAC_NR_DOC: TStringField;
+    cdsAcertos_OSODAC_NR_AGENCIA: TStringField;
+    cdsAcertos_OSODAC_NR_CONTA: TStringField;
+    cdsAcertos_OSODAC_TITULAR: TStringField;
+    cdsAcertos_OSODAC_DTA_VCTO: TDateField;
+    cdsAcertos_OSODAC_ID: TIntegerField;
+    cdsAcertos_OSODAC_EMPR_ID: TIntegerField;
+    cdsAcertos_OSODAC_ORDS_ID: TIntegerField;
+    cdsAcertos_OSODAC_ORDS_EMPR_ID: TIntegerField;
+    cdsAcertos_OSODAC_ORDS_CLIE_ID: TIntegerField;
+    cdsAcertos_OSODAC_ORDS_CLIE_EMPR_ID: TIntegerField;
+    cdsAcertos_OSODAC_GENE_EMPR_ID_TIPO_DOC: TIntegerField;
+    cdsAcertos_OSODAC_GENE_TGEN_ID_TIPO_DOC: TIntegerField;
+    cdsAcertos_OSODAC_GENE_ID_TIPO_DOC: TIntegerField;
+    cdsAcertos_OSODAC_GENE_EMPR_ID_BCO: TIntegerField;
+    cdsAcertos_OSODAC_GENE_TGEN_ID_BCO: TIntegerField;
+    cdsAcertos_OSODAC_GENE_ID_BCO: TIntegerField;
+    cdsAcertos_OSODAC_STATUS: TIntegerField;
+    cdsAcertos_OSODAC_DTA_CADASTRO: TDateField;
+    cdsAcertos_OSODAC_USER_ID: TIntegerField;
+    cdsRel_Ordem_ServicoCLIE_FANTASIA: TStringField;
+    cdsRel_Ordem_ServicoCLIE_CNPJ_CPF: TStringField;
+    cdsRel_Ordem_ServicoCLIE_RG: TStringField;
+    cdsRel_Ordem_ServicoATENDENTE: TStringField;
+    cdsRel_Ordem_ServicoORDS_FORN_ID_EQUIP: TIntegerField;
+    cdsRel_Ordem_ServicoFORN_ID: TIntegerField;
+    cdsRel_Ordem_ServicoFORN_RAZAO_SOCIAL: TStringField;
+    qryComissao_Pecas_Servicos: TSQLQuery;
+    dspComissao_Pecas_Servicos: TDataSetProvider;
+    cdsComissao_Pecas_Servicos: TClientDataSet;
+    dsComissao_Pecas_Servicos: TDataSource;
+    cdsRel_Ordem_ServicoCLIE_REFERENCIA: TStringField;
+    cdsRel_Ordem_ServicoSTATUS_OS: TStringField;
+    cdsRel_Ordem_ServicoTIPO_AGENDAMENTO: TStringField;
+    cdsRel_Ordem_ServicoFILTRO: TStringField;
+    qryOrdemServicoItensGENE_IMAGE: TBlobField;
+    cdsOrdemServicoItensGENE_IMAGE: TBlobField;
+    cdsRel_Ordem_ServicoETIQUETA: TStringField;
+    cdsRel_Ordem_ServicoCLIE_ID: TIntegerField;
+    qryPecas_Servicos: TSQLQuery;
+    dspPecas_Servicos: TDataSetProvider;
+    cdsPecas_Servicos: TClientDataSet;
+    IntegerField1: TIntegerField;
+    IntegerField2: TIntegerField;
+    IntegerField3: TIntegerField;
+    StringField1: TStringField;
+    IntegerField4: TIntegerField;
+    StringField2: TStringField;
+    DateField1: TDateField;
+    IntegerField5: TIntegerField;
+    StringField3: TStringField;
+    IntegerField6: TIntegerField;
+    StringField4: TStringField;
+    IntegerField7: TIntegerField;
+    StringField5: TStringField;
+    StringField6: TStringField;
+    StringField7: TStringField;
+    StringField8: TStringField;
+    StringField9: TStringField;
+    DateField2: TDateField;
+    IntegerField8: TIntegerField;
+    StringField10: TStringField;
+    IntegerField9: TIntegerField;
+    StringField11: TStringField;
+    StringField12: TStringField;
+    StringField13: TStringField;
+    StringField14: TStringField;
+    IntegerField10: TIntegerField;
+    StringField15: TStringField;
+    FMTBCDField1: TFMTBCDField;
+    FMTBCDField2: TFMTBCDField;
+    FMTBCDField3: TFMTBCDField;
+    FMTBCDField4: TFMTBCDField;
+    FMTBCDField5: TFMTBCDField;
+    FMTBCDField6: TFMTBCDField;
+    StringField16: TStringField;
+    IntegerField11: TIntegerField;
+    StringField17: TStringField;
+    StringField18: TStringField;
+    FMTBCDField7: TFMTBCDField;
+    FMTBCDField8: TFMTBCDField;
+    FMTBCDField9: TFMTBCDField;
+    FMTBCDField10: TFMTBCDField;
+    FMTBCDField11: TFMTBCDField;
+    FMTBCDField12: TFMTBCDField;
+    FMTBCDField13: TFMTBCDField;
+    dsPecas_Servicos: TDataSource;
+    cdsComissao_Pecas_ServicosORDS_ID: TIntegerField;
+    cdsComissao_Pecas_ServicosORDS_EMPR_ID: TIntegerField;
+    cdsComissao_Pecas_ServicosORDS_CLIE_ID: TIntegerField;
+    cdsComissao_Pecas_ServicosCLIE_RAZAO_SOCIAL: TStringField;
+    cdsComissao_Pecas_ServicosORDS_TPRC_ID: TIntegerField;
+    cdsComissao_Pecas_ServicosTPRC_DESCRICAO: TStringField;
+    cdsComissao_Pecas_ServicosORDS_DTA_INSTALACAO: TDateField;
+    cdsComissao_Pecas_ServicosORDS_GENE_ID_TIPO_OS: TIntegerField;
+    cdsComissao_Pecas_ServicosDESCR_TIPO_OS: TStringField;
+    cdsComissao_Pecas_ServicosORDS_STATUS: TIntegerField;
+    cdsComissao_Pecas_ServicosSTATUS_OS: TStringField;
+    cdsComissao_Pecas_ServicosORDS_PROD_ID_EQUIP: TIntegerField;
+    cdsComissao_Pecas_ServicosEQUIP_DESCRICAO: TStringField;
+    cdsComissao_Pecas_ServicosEQUIP_UNIDADE: TStringField;
+    cdsComissao_Pecas_ServicosEQUIP_MARCA: TStringField;
+    cdsComissao_Pecas_ServicosEQUIP_MODELO: TStringField;
+    cdsComissao_Pecas_ServicosEQUIP_FORNECEDOR: TStringField;
+    cdsComissao_Pecas_ServicosORDS_DTA_CADASTRO: TDateField;
+    cdsComissao_Pecas_ServicosORDS_USER_ID: TIntegerField;
+    cdsComissao_Pecas_ServicosUSER_ATENDENTE: TStringField;
+    cdsComissao_Pecas_ServicosORDS_VLR_PAGO: TFMTBCDField;
+    cdsComissao_Pecas_ServicosORDS_VLR_DESCONTO: TFMTBCDField;
+    cdsComissao_Pecas_ServicosORDS_VLR_TOTAL_OS: TFMTBCDField;
+    cdsComissao_Pecas_ServicosVLR_PERC_DESC: TFMTBCDField;
+    cdsComissao_Pecas_ServicosORDS_USER_ID_TEC: TIntegerField;
+    cdsComissao_Pecas_ServicosUSER_NOME_TECNICO: TStringField;
+    cdsComissao_Pecas_ServicosFILTRO: TStringField;
+    cdsComissao_Pecas_ServicosATENDENTE: TStringField;
+    cdsComissao_Pecas_ServicosVLRCOMISSAOINTERNO: TFMTBCDField;
+    cdsComissao_Pecas_ServicosVLRCOMISSAOEXTERNO: TFMTBCDField;
+    cdsComissao_Pecas_ServicosVLRCOMISSAOBALCAO: TFMTBCDField;
+    cdsRel_Ordem_ServicoORDS_HORARIO: TTimeField;
+    cdsComissao_Pecas_ServicosORDS_HORARIO: TTimeField;
+    cdsPecas_ServicosORDS_HORARIO: TTimeField;
+    cdsComissao_Pecas_ServicosCLIE_TELEFONE1: TStringField;
+    cdsComissao_Pecas_ServicosCLIE_TELEFONE2: TStringField;
+    cdsComissao_Pecas_ServicosPRACA: TIntegerField;
+    procedure dsRel_Ordem_ServicoDataChange(Sender: TObject; Field: TField);
+    procedure dsComissao_Pecas_ServicosDataChange(Sender: TObject;
+      Field: TField);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmRel_Ordem_Servico: TdmRel_Ordem_Servico;
+
+implementation
+
+{$R *.dfm}
+
+procedure TdmRel_Ordem_Servico.dsComissao_Pecas_ServicosDataChange(Sender: TObject;
+  Field: TField);
+begin
+  inherited;
+  with cdsPecas_Servicos do begin
+    Close;
+    Params.ParamByName('ORDS_ID').AsInteger := cdsComissao_Pecas_ServicosORDS_ID.AsInteger;
+    Params.ParamByName('EMPR_ID').AsInteger := funcLocal.Empr_ID;
+    Open;
+  end;
+end;
+
+procedure TdmRel_Ordem_Servico.dsRel_Ordem_ServicoDataChange(Sender: TObject;
+  Field: TField);
+begin
+  inherited;
+  with cdsOrdemServicoItens do begin
+      Close;
+      Params.ParamByName('EMPR_ID').AsInteger := funcLocal.Empr_ID;
+      Params.ParamByName('ORDS_ID').AsInteger := cdsRel_Ordem_ServicoORDS_ID.AsInteger;
+      Params.ParamByName('EMPR_ID').AsInteger := funcLocal.Empr_ID;
+      Params.ParamByName('CLIE_ID').AsInteger := cdsRel_Ordem_ServicoORDS_CLIE_ID.AsInteger;
+      Params.ParamByName('EMPR_ID').AsInteger := funcLocal.Empr_ID;
+      Open;
+  end;
+end;
+
+initialization
+  if dmRel_Ordem_Servico = nil then
+    dmRel_Ordem_Servico := TdmRel_Ordem_Servico.Create(nil);
+finalization
+  FreeAndNil(dmRel_Ordem_Servico);
+
+end.

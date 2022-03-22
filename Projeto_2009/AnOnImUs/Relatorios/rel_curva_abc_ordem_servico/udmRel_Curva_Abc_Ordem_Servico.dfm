@@ -1,0 +1,2 @@
+inherited dmRel_Curva_ABC_Ordem_Servico: TdmRel_Curva_ABC_Ordem_Servico
+end

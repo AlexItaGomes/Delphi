@@ -1,0 +1,41 @@
+:: CONTRATO DE LICENÇA DE USUÁRIO FINAL PARA SOFTWARE ::
+
+IMPORTANTE - LEIA COM ATENÇÃO: 
+
+Este Contrato de Licença de Usuário Final é um acordo legal entre você (pessoa física ou jurídica) e a AnOnImUs.Info para o software AnOnImUs.Info e seus modulos que inclui o programa de computador e poderá incluir meios físicos, materiais impressos e documentação on-line ou eletrônica ("PRODUTO" ou "SOFTWARE"). O SOFTWARE também inclui atualizações e suplementos para o SOFTWARE original fornecido pela AnOnImUs.Info. Qualquer software fornecido com o PRODUTO que esteja associado a um contrato de licença de usuário final separado será licenciado sob os termos daquele contrato de licença. Ao instalar, copiar, fazer o download, acessar ou de qualquer outra forma usar o SOFTWARE, você está concordando em vincular-se aos termos desta Licença. Caso não concorde com os termos desta Licença, não instale ou utilize o SOFTWARE.
+
+:: LICENÇA DO SOFTWARE ::
+
+Este SOFTWARE é protegido por leis de direito autoral e tratados internacionais relativos a direitos autorais, bem como por outras legislações e tratados sobre propriedade intelectual.
+
+CONCESSÃO DE LICENÇA. 
+
+Esta Licença lhe concede os direitos a seguir.
+
+Software de Sistema. Você poderá instalar e usar uma cópia do SOFTWARE em quanto computadores achar necessário, o seu uso e ilimitado e gratuito.
+
+O registro de cópia, inclui o aceite incondicional de recebimento de "INFORMAÇÕES E/OU CORRESPONDÊNCIAS", seja por meio eletrônico e/ou físico, sem que seja configurado abuso de correspondência.
+
+:: DESCRIÇÃO DE OUTROS DIREITOS E LIMITAÇÕES ::
+
+Limitações para Engenharia Reversa, Descompilação e Desmontagem. É vedada a engenharia reversa, descompilação ou desmontagem do SOFTWARE, exceto e somente na medida em que essa atividade seja expressamente permitida pela legislação aplicável, não obstante tal limitação.
+Separação de Componentes. O SOFTWARE é distribuido como um produto único. Seus componentes não poderão ser separados para utilização em mais de um computador.
+Aluguel. É vedado o aluguel ou arrendamento do SOFTWARE.
+Marcas comerciais. Esta Licença não lhe outorga quaisquer direitos relativos às marcas comerciais ou de serviços da AnOnImUs.Info (Alex Itamar Gomes).
+Serviços de Suporte. A AnOnImUs.Info poderá lhe fornecer serviços de suporte relacionados ao SOFTWARE ("Serviços de Suporte"). O uso dos Serviços de Suporte é regulamentado pelas diretrizes e programas da AnOnImUs.Info, fornecidos via e-mail, forum, 0800Net ou Msn. Qualquer código de software suplementar que lhe seja fornecido como parte dos Serviços de Suporte deve ser considerado parte do SOFTWARE e sujeito aos termos e condições desta Licença. Com respeito às informações técnicas que você forneça à AnOnImUs.Info como parte dos Serviços de Suporte, a AnOnImUs.Info poderá utilizá-las em suas atividades comerciais, incluindo o suporte e desenvolvimento do produto. A AnOnImUs.Info não irá utilizar essas informações técnicas de forma que você seja identificado pessoalmente.
+
+:: DIREITOS AUTORAIS ::
+
+Todos os títulos e direitos referentes à propriedade intelectual relativos ao SOFTWARE (incluindo, mas não se limitando a, quaisquer imagens, fotografias, animações, vídeos, áudios, músicas, textos e "miniaplicativos" incorporados ao SOFTWARE), os materiais impressos que o acompanham e quaisquer cópias do SOFTWARE são de propriedade da AnOnImUs.Info ou de seus fornecedores. Todos os títulos e direitos de propriedade intelectual relativos ao conteúdo que pode ser acessado através do uso do SOFTWARE é de propriedade do respectivo proprietário do conteúdo e pode estar protegido por outros tratados e leis de copyright ou de propriedade intelectual aplicáveis. Esta Licença não lhe concede nenhum direito sobre esse conteúdo. Todos os direitos que não estejam expressamente garantidos são reservados à AnOnImUs.Info (Alex Itamar Gomes).
+
+:: NOTA LEGAL ::
+
+Este programa é protegido por leis de direitos autorias e de marcas. A distribuição deste ou de parte deste sem a prévia autorização da AnOnImUs.Info (Alex Itamar Gomes), constitui crime, sendo o infrator indiciado nas maiores penas que a Lei vigente permitir.
+
+:: CONTRATO DE USO ::
+
+Este Software poderá ser utilizado de forma limitada por ser licenciado e não vendido, porém modificações, descompilação ou outras formas que afetem a integridade autoral do software ou de parte dele constitui crime e o infrator será punido no maior rigor da lei.
+Alex Itamar Gomes, detém todos os direitos sobre o software, sua documentação, site da AnOnImUs.Info, COM EXCEÇÃO DAS INFORMAÇÕES PESSOAIS QUE SÃO DE DIREITOS AUTORAIS DOS RESPECTIVOS PESQUISADORES E DE ALGUNS COMPONENTES QUE COMPÕEM O SOFTWARE.
+Somente será concedida a licença legal da utilização deste, sendo vetada a comercialização, distribuição deste ou de parte deste.
+AnOnImUs.Info Sistemas Comerciais Ltda - Copyright© 2009-2011, Alex Itamar Gomes (AnOnImUs.Info)
+E-mail: contato@anonimus.info

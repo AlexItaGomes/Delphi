@@ -1,0 +1,38 @@
+package rel_contas_receber;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  basico;
+
+contains
+  udmRel_Contas_Receber in '..\udmRel_Contas_Receber.pas' {dmRel_Contas_Receber: TDataModule},
+  ufRel_Contas_Receber in '..\ufRel_Contas_Receber.pas',
+  ufRel_Contas_Receber_Analitico in '..\ufRel_Contas_Receber_Analitico.pas' {fRel_Contas_Receber_Analitico},
+  ufRel_Contas_Receber_Sintetico in '..\ufRel_Contas_Receber_Sintetico.pas' {fRel_Contas_Receber_Sintetico};
+
+end.

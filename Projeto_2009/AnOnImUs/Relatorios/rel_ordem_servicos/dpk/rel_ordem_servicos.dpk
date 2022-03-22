@@ -1,0 +1,40 @@
+package rel_ordem_servicos;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  basico;
+
+contains
+  udmRel_Ordem_Servicos in '..\udmRel_Ordem_Servicos.pas' {dmRel_Ordem_Servico},
+  ufRel_Ordem_Servico_Analitico in '..\ufRel_Ordem_Servico_Analitico.pas',
+  ufRel_Ordem_Servico_Tecnico in '..\ufRel_Ordem_Servico_Tecnico.pas',
+  ufRel_Ordem_Servicos in '..\ufRel_Ordem_Servicos.pas',
+  ufRel_Produtos_Servicos in '..\ufRel_Produtos_Servicos.pas',
+  ufRelEtiquetas in '..\ufRelEtiquetas.pas' {fRelEtiquetas};
+
+end.

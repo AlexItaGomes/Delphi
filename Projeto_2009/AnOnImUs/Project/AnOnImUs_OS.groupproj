@@ -1,0 +1,166 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{341c93cb-56b1-4281-91b9-81e169653b03}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Pro_Funcoes">
+    <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj" Targets="" />
+  </Target>
+  <Target Name="Pro_Funcoes:Clean">
+    <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Pro_Funcoes:Make">
+    <MSBuild Projects="..\..\Componentes\Pro_Funcoes\dpk\Pro_Funcoes.dproj" Targets="Make" />
+  </Target>
+  <Target Name="basico">
+    <MSBuild Projects="..\Administrativo\frm_basico\dpk\basico.dproj" Targets="" />
+  </Target>
+  <Target Name="basico:Clean">
+    <MSBuild Projects="..\Administrativo\frm_basico\dpk\basico.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="basico:Make">
+    <MSBuild Projects="..\Administrativo\frm_basico\dpk\basico.dproj" Targets="Make" />
+  </Target>
+  <Target Name="AnOnImUs">
+    <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj" Targets="" />
+  </Target>
+  <Target Name="AnOnImUs:Clean">
+    <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="AnOnImUs:Make">
+    <MSBuild Projects="..\Administrativo\frm_Principal\AnOnImUs.dproj" Targets="Make" />
+  </Target>
+  <Target Name="configuracao">
+    <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj" Targets="" />
+  </Target>
+  <Target Name="configuracao:Clean">
+    <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="configuracao:Make">
+    <MSBuild Projects="..\Administrativo\frm_Configuracao\dpk\configuracao.dproj" Targets="Make" />
+  </Target>
+  <Target Name="tabela_preco">
+    <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj" Targets="" />
+  </Target>
+  <Target Name="tabela_preco:Clean">
+    <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="tabela_preco:Make">
+    <MSBuild Projects="..\Vendas\frm_tabela_preco\dpk\tabela_preco.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ordem_servico">
+    <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj" Targets="" />
+  </Target>
+  <Target Name="ordem_servico:Clean">
+    <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ordem_servico:Make">
+    <MSBuild Projects="..\Servicos\frm_ordem_servico\dpk\ordem_servico.dproj" Targets="Make" />
+  </Target>
+  <Target Name="transf_pecas_servicos">
+    <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj" Targets="" />
+  </Target>
+  <Target Name="transf_pecas_servicos:Clean">
+    <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="transf_pecas_servicos:Make">
+    <MSBuild Projects="..\Servicos\frm_transf_pecas_servicos\dpk\transf_pecas_servicos.dproj" Targets="Make" />
+  </Target>
+  <Target Name="termos_recebimento">
+    <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj" Targets="" />
+  </Target>
+  <Target Name="termos_recebimento:Clean">
+    <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="termos_recebimento:Make">
+    <MSBuild Projects="..\Servicos\frm_termo_recebimento\dpk\termos_recebimento.dproj" Targets="Make" />
+  </Target>
+  <Target Name="termo_retirada">
+    <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj" Targets="" />
+  </Target>
+  <Target Name="termo_retirada:Clean">
+    <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="termo_retirada:Make">
+    <MSBuild Projects="..\Servicos\frm_termo_retirada\dpk\termo_retirada.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rel_livro_caixa">
+    <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj" Targets="" />
+  </Target>
+  <Target Name="rel_livro_caixa:Clean">
+    <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rel_livro_caixa:Make">
+    <MSBuild Projects="..\Relatorios\rel_livro_caixa\dpk\rel_livro_caixa.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rel_ordem_servicos">
+    <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj" Targets="" />
+  </Target>
+  <Target Name="rel_ordem_servicos:Clean">
+    <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rel_ordem_servicos:Make">
+    <MSBuild Projects="..\Relatorios\rel_ordem_servicos\dpk\rel_ordem_servicos.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rel_produtos">
+    <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj" Targets="" />
+  </Target>
+  <Target Name="rel_produtos:Clean">
+    <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rel_produtos:Make">
+    <MSBuild Projects="..\Relatorios\rel_produtos\dpk\rel_produtos.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rel_tabela_preco">
+    <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj" Targets="" />
+  </Target>
+  <Target Name="rel_tabela_preco:Clean">
+    <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rel_tabela_preco:Make">
+    <MSBuild Projects="..\Relatorios\rel_tabela_preco\dpk\rel_tabela_preco.dproj" Targets="Make" />
+  </Target>
+  <Target Name="produtos">
+    <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj" Targets="" />
+  </Target>
+  <Target Name="produtos:Clean">
+    <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="produtos:Make">
+    <MSBuild Projects="..\Estoque\frm_Produtos\dpk\produtos.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rel_curva_abc_ordem_servico">
+    <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj" Targets="" />
+  </Target>
+  <Target Name="rel_curva_abc_ordem_servico:Clean">
+    <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rel_curva_abc_ordem_servico:Make">
+    <MSBuild Projects="..\Relatorios\rel_curva_abc_ordem_servico\bpk\rel_curva_abc_ordem_servico.dproj" Targets="Make" />
+  </Target>
+  <Target Name="graf_evolutivo_os">
+    <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj" Targets="" />
+  </Target>
+  <Target Name="graf_evolutivo_os:Clean">
+    <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="graf_evolutivo_os:Make">
+    <MSBuild Projects="..\Relatorios\graf_evolutivo_os\dpk\graf_evolutivo_os.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Pro_Funcoes;basico;AnOnImUs;configuracao;tabela_preco;ordem_servico;transf_pecas_servicos;termos_recebimento;termo_retirada;rel_livro_caixa;rel_ordem_servicos;rel_produtos;rel_tabela_preco;produtos;rel_curva_abc_ordem_servico;graf_evolutivo_os" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Pro_Funcoes:Clean;basico:Clean;AnOnImUs:Clean;configuracao:Clean;tabela_preco:Clean;ordem_servico:Clean;transf_pecas_servicos:Clean;termos_recebimento:Clean;termo_retirada:Clean;rel_livro_caixa:Clean;rel_ordem_servicos:Clean;rel_produtos:Clean;rel_tabela_preco:Clean;produtos:Clean;rel_curva_abc_ordem_servico:Clean;graf_evolutivo_os:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Pro_Funcoes:Make;basico:Make;AnOnImUs:Make;configuracao:Make;tabela_preco:Make;ordem_servico:Make;transf_pecas_servicos:Make;termos_recebimento:Make;termo_retirada:Make;rel_livro_caixa:Make;rel_ordem_servicos:Make;rel_produtos:Make;rel_tabela_preco:Make;produtos:Make;rel_curva_abc_ordem_servico:Make;graf_evolutivo_os:Make" />
+  </Target>
+</Project>
